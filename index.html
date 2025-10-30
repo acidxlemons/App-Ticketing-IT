@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sistema de Tickets</title>
+  <link rel="icon" href="./assets/E%20sin%20fondo.png" />
+  <link rel="stylesheet" href="./assets/styles.css">
+</head>
+<body>
+  <!-- Header con isotipo (se ve en TODAS las páginas) -->
+  <header class="app-header">
+    <div class="header-container">
+      <div class="header-brand">
+        <img src="./assets/E%20sin%20fondo.png" alt="Europavia" class="brand-img" />
+        <h1>Sistema de Tickets</h1>
+      </div>
+      <!-- espacio para info de usuario / botón salir que ya pintas desde JS -->
+      <div id="user-chip" class="header-user"></div>
+    </div>
+  </header>
+
+  <div id="app">
+    <!-- Región de notificaciones accesible -->
+    <div id="notification-container" aria-live="polite" aria-atomic="true"></div>
+    <!-- Contenido dinámico -->
+    <div id="content" class="main-container"></div>
+  </div>
+
+  <script type="module" src="./src/app.js"></script>
+</body>
+</html>
